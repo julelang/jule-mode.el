@@ -1,0 +1,27 @@
+/* this file tests the syntax highlighting */
+
+#pass "-v" // this is a comment :)
+
+const TEST_DATA: str = "test data"
+const _0 = "test data\n"
+const _1 = 'h'
+const _2 = `world\n`
+
+// number tests
+const _3 = 123
+const _4 = 123.456
+const _5 = 123_456
+const _6 = 123_456.789e012
+const _7 = 0b0101
+const _8 = 0b0101_01
+const _9 = 0o123
+const _10 = 0o123_456
+const _11 = 0xfff
+const _12 = 0xfff_0a1
+
+fn main() {
+	thoseGuys(TEST_DATA)
+	println(TEST_DATA)
+}
+
+fn thoseGuys[T](test: T) {}
